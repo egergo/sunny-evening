@@ -1,0 +1,52 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReceiverActivity" >
+        
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|right">
+        
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:text="Waiting for a sender..." />        
+
+        <TextView
+            android:id="@+id/fps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unknown FPS" />
+        
+        <TextView
+            android:id="@+id/incomingFps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unknown FPS" />  
+            
+        <TextView
+            android:id="@+id/errorRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unknown FPS" />
+        
+        <TextView
+            android:id="@+id/bps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Unknown FPS" />            
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,46 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SenderActivity" >
+        
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center|center"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/statusPanel"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right">
+
+        <TextView
+            android:id="@+id/encodingFps"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encoding FPS" />
+        
+        <TextView
+            android:id="@+id/encodingMedianTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Encoding Median" />  
+            
+        <TextView
+            android:id="@+id/sendingPercSec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sending/s" />
+        
+        <TextView
+            android:id="@+id/sendingMedianTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sending Median" />            
+    </LinearLayout>
+
+</FrameLayout>
